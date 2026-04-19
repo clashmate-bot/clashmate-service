@@ -11,7 +11,10 @@
     "lint": "eslint . --max-warnings=0",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "test": "tsx --test"
+    "test": "tsx --test",
+    "db:migrate": "tsx src/db/migrate.ts",
+    "db:seed": "tsx src/db/seed.ts",
+    "db:refresh-analytics": "tsx src/db/refresh-materialized-views-cli.ts"
   },
   "dependencies": {
     "fastify": "^5.2.1",
